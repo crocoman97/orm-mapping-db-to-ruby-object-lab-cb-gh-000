@@ -58,6 +58,7 @@ class Student
     sql = <<-SQL
     SELECT * FROM students WHERE grade = 10 LIMIT 1
     SQL
+    binding.pry
     DB[:conn].execute(sql).map { |row|
       new_from_db(row) 
     }.first
