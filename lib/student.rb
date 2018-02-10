@@ -53,7 +53,7 @@ class Student
     DB[:conn].execute(sql,x).map { |row|
       new_from_db(row) 
     }
-    
+    binding.pry
   end
   
   def save
