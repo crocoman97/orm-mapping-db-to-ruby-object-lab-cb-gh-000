@@ -55,7 +55,9 @@ class Student
     }
   end
   
-  def self.
+  def self.first_student_in_grade_10
+    
+  end
   
   def save
     sql = <<-SQL
