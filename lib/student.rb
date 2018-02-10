@@ -49,11 +49,10 @@ class Student
     sql = <<-SQL
     SELECT * FROM students WHERE grade = 10 LIMIT ?
     SQL
-    
+    binding.pry
     DB[:conn].execute(sql,x).map { |row|
       new_from_db(row) 
     }
-    binding.pry
   end
   
   def save
