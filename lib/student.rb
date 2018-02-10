@@ -63,7 +63,9 @@ class Student
     }.first
   end
   
-  def self.
+  def self.all_students_in_grade_X(x)
+    
+  end
   
   def save
     sql = <<-SQL
